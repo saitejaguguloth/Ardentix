@@ -16,6 +16,13 @@ const anton = Anton({
 export const metadata: Metadata = {
     title: "ARDENTIX | Building Scalable Software",
     description: "ARDENTIX is a software company that builds and supplies scalable SaaS tools for modern teams.",
+    icons: {
+        icon: [
+            { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+        ],
+        apple: '/apple-touch-icon.png',
+    },
 };
 
 export default function RootLayout({

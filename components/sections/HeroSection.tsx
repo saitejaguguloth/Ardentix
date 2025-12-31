@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <SplitText
                     text="ARDENTIX"
                     tag="h1"
-                    className="font-display text-[12vw] md:text-[14vw] lg:text-[16vw] leading-[0.85] tracking-tighter text-center select-none text-black"
+                    className="font-display text-[10vw] md:text-[12vw] lg:text-[13vw] leading-[0.85] tracking-tighter text-center select-none text-black"
                     delay={80}
                     duration={0.8}
                     ease="power3.out"

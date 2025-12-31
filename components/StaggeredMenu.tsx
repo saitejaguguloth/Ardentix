@@ -398,12 +398,14 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
             </div>
             <header className="staggered-menu-header" aria-label="Main navigation header">
                 <div className="sm-logo" aria-label="Logo">
-                    <img
-                        src="/logo.png"
-                        alt="ARDENTIX"
-                        className="sm-logo-img"
-                        style={{ filter: 'invert(0) brightness(0)', height: '50px', width: 'auto' }}
-                    />
+                    <a href="/" style={{ display: 'block', lineHeight: 0 }}>
+                        <img
+                            src="/logo.png"
+                            alt="ARDENTIX"
+                            className="sm-logo-img"
+                            style={{ filter: 'invert(0) brightness(0)', height: '80px', width: 'auto', cursor: 'pointer' }}
+                        />
+                    </a>
                 </div>
                 <button
                     ref={toggleBtnRef}
