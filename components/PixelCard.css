@@ -1,0 +1,100 @@
+.pixel-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pixel-card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    isolation: isolate;
+    transition: border-color 200ms cubic-bezier(0.5, 1, 0.89, 1);
+    user-select: none;
+    background: #e5e5e5;
+}
+
+.pixel-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.1), transparent 85%);
+    opacity: 0;
+    transition: opacity 800ms cubic-bezier(0.5, 1, 0.89, 1);
+    z-index: 0;
+}
+
+.pixel-card:hover::before,
+.pixel-card:focus-within::before {
+    opacity: 1;
+}
+
+.pixel-card:hover,
+.pixel-card:focus-within {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.pixel-card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.pixel-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.pixel-card-description {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.pixel-card-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.pixel-card:hover .pixel-card-button,
+.pixel-card:focus-within .pixel-card-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pixel-card-button:hover {
+    background: #5227FF;
+}
