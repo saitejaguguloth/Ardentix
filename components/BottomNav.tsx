@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 const navItems = [
     { label: 'Services', href: '#services' },
     { label: 'Work', href: '#work' },
+    { label: 'Careers', href: '#careers' },
     { label: 'Team', href: '#team' },
     { label: 'About', href: '#intro' },
     { label: 'Contact', href: '#contact' },
@@ -16,7 +17,7 @@ export default function BottomNav() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['hero', 'intro', 'services', 'work', 'team', 'contact'];
+            const sections = ['hero', 'intro', 'services', 'work', 'careers', 'team', 'contact'];
             const current = sections.find(section => {
                 const element = document.getElementById(section);
                 if (element) {
@@ -46,8 +47,8 @@ export default function BottomNav() {
                         key={item.href}
                         href={item.href}
                         className={`px-5 py-2 text-[13px] font-medium rounded-full transition-all duration-200 ${activeSection === item.href.slice(1)
-                                ? 'bg-white text-black'
-                                : 'text-white/80 hover:text-white hover:bg-white/10'
+                            ? 'bg-white text-black'
+                            : 'text-white/80 hover:text-white hover:bg-white/10'
                             }`}
                     >
                         {item.label}

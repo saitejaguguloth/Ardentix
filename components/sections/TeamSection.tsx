@@ -63,12 +63,10 @@ export default function TeamSection() {
                             title={member.role}
                             handle={member.handle}
                             status="Team Member"
-                            contactText="LinkedIn"
                             avatarUrl={member.avatar}
                             showUserInfo={true}
                             enableTilt={true}
                             enableMobileTilt={false}
-                            onContactClick={() => window.open(member.linkedin, '_blank')}
                         />
                     </motion.div>
                 ))}
