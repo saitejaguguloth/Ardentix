@@ -30,7 +30,7 @@ const jobRoles: JobRole[] = [
     {
         title: 'Full Stack Developer Intern',
         subtitle: 'Full Stack | Web | App',
-        applyLink: 'https://forms.gle/pcDcRhqJUYdYDWo96',
+        applyLink: 'https://forms.gle/R3NbupZwjQEDTbig8',
         details: {
             duration: '3–6 Months',
             stipend: 'Unpaid, with performance-based incentives',
@@ -81,7 +81,7 @@ const jobRoles: JobRole[] = [
     {
         title: 'AI / ML Engineer Intern',
         subtitle: 'Machine Learning | Data Analysis | Model Training',
-        applyLink: 'https://forms.gle/1ayCtwMYUWDjSnfV7',
+        applyLink: 'https://forms.gle/R3NbupZwjQEDTbig8',
         details: {
             duration: '3–6 Months',
             stipend: 'Unpaid, with performance-based incentives',
@@ -126,6 +126,57 @@ const jobRoles: JobRole[] = [
             {
                 trait: 'Genuinely Interested',
                 description: "You're here to learn AI by building, not just to collect certificates.",
+            },
+        ],
+    },
+    {
+        title: 'UI/UX Designer Intern',
+        subtitle: 'User Interface | User Experience | Visual Design',
+        applyLink: 'https://forms.gle/R3NbupZwjQEDTbig8',
+        details: {
+            duration: '3–6 Months',
+            stipend: 'Unpaid, with performance-based incentives',
+            fullTime: 'Performance-based PPO opportunity',
+            experience: 'Figma / Adobe XD / Sketch | Prototyping | User Research (Motion design is a plus)',
+            location: 'Remote',
+            positions: 'Multiple',
+        },
+        about: [
+            'We design products that people actually want to use.',
+            'No generic templates. No design-by-committee.',
+            'At Ardentix, design is about solving real problems with clarity and intention.',
+            "You'll work on live products, get real feedback, and see your designs ship.",
+        ],
+        hiringProcess: [
+            {
+                title: 'Initial Screening',
+                description: "A short conversation to understand your design background, style, and interests. We'll walk you through the kind of products you'll be designing.",
+            },
+            {
+                title: 'Design Challenge',
+                description: "A practical design task based on real scenarios. We want to see your process, not just the final output. Think aloud, iterate, and show us how you solve problems.",
+            },
+            {
+                title: 'Final Discussion',
+                description: 'A culture and mindset check. We value taste, attention to detail, and willingness to iterate based on feedback.',
+            },
+        ],
+        lookingFor: [
+            {
+                trait: 'Detail-Oriented',
+                description: 'You notice the small things that make a big difference. Spacing, alignment, consistency—it all matters to you.',
+            },
+            {
+                trait: 'Curious',
+                description: "You're interested in why designs work, not just how they look. You explore patterns and understand user behavior.",
+            },
+            {
+                trait: 'Iterative',
+                description: "You don't settle on the first idea. You explore, refine, and improve based on feedback and constraints.",
+            },
+            {
+                trait: 'Genuinely Interested',
+                description: 'You care about craft and want to build beautiful, functional products—not just add to your portfolio.',
             },
         ],
     },

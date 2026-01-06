@@ -6,7 +6,6 @@ import HowWeWorkSection from '@/components/sections/HowWeWorkSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import WhoWeWorkWithSection from '@/components/sections/WhoWeWorkWithSection';
 import PrinciplesSection from '@/components/sections/PrinciplesSection';
-import TeamSection from '@/components/sections/TeamSection';
 import CareersSection from '@/components/sections/CareersSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/Footer';
@@ -16,7 +15,6 @@ const menuItems = [
     { label: 'Services', ariaLabel: 'View our services', link: '#services' },
     { label: 'Work', ariaLabel: 'See our work', link: '#work' },
     { label: 'Careers', ariaLabel: 'Join our team', link: '#careers' },
-    { label: 'Team', ariaLabel: 'Meet the team', link: '#team' },
     { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' }
 ];
 
@@ -48,7 +46,6 @@ export default function Home() {
             <WhoWeWorkWithSection />
             <PrinciplesSection />
             <CareersSection />
-            <TeamSection />
             <ContactSection />
             <Footer />
         </main>
